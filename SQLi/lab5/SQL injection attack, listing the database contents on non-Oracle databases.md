@@ -33,7 +33,7 @@ lab: "PortSwigger Web Security Academy — SQL injection"
 *Рисунок 3 - Поиск таблиц*
 ![tables](images/tables.png)
 Просмотрев все таблицы, самой интересно оказалась `users_qwdotp`, так как скорее всего она сгенерирована пользователем. Теперь попробуем узнать какие у неё столбцы. 
-Вот запрос для этого:`https://lab-target.web-security-academy.net/filter?category=Accessories'+UNION+SELECT column_name, data_type%20 FROM information_schema.columns%20 WHERE table_name = 'users_bzwtlb'--`
+Вот запрос для этого:`https://lab-target.web-security-academy.net/filter?category=Accessories'+UNION+SELECT column_name, data_type%20 FROM information_schema.columns%20 WHERE table_name = 'users_qwdotp'--`
 *Рисунок 4 - Столбцы у таблицы пользователей*
 ![columns](images/columns.png)
 Отлично, у данной таблицы есть два ключевых столбца - username и password. 
