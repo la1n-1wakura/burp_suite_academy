@@ -31,7 +31,7 @@ lab: "PortSwigger Web Security Academy — SQL injection"
 
 Аналогично получаем пароль администратора и успешно входим.
 *Рисунок 3 - вход под УЗ админа*
-![success_login](imagess/success_login.png)
+![success_login](images/success_login.png)
 
 # 3.Выводы
 - Уязвимость найдена в параметре category приложения.
